@@ -1,0 +1,20 @@
+{
+    "name":             "Jira descriptive link",
+    "description":      "Adds a copyable link with issue name and key. Clear and searchable when used in Slack or Teams etc. Not an official Jira extension.",
+    "version":          "0.1",
+    "manifest_version": 3,
+    "content_scripts":  [{
+      "matches": [
+        "https://*/browse/*"
+      ],
+      "js": ["jira-descriptive-link.user.js"],
+      "run_at": "document_idle"
+    }],
+    "icons": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "converted_from_user_script": true
+}
